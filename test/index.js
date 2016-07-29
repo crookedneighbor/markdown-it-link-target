@@ -42,6 +42,16 @@ describe('markdown-it-linkify-images', function () {
     expect(result).to.contain('<a href="https://google.com" target="_top">link</a>')
   })
 
+  it('allows rel value to be configured', function () {
+    this.md.use(linkTarget, {
+      rel: 'nooper'
+    })
+
+    var result = this.md.render('[link](https://google.com)')
+
+    expect(result).to.contain('rel="nooper"')
+  })
+
   it('calls link_open function if provided', function () {
     var spy = this.md.renderer.rules.link_open = sinon.spy()
     this.md.use(linkTarget)
