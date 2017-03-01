@@ -1,5 +1,7 @@
 # markdown-it-link-target
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/crookedneighbor/markdown-it-link-target.svg)](https://greenkeeper.io/)
+
 _Deprecated: Use [markdown-it-link-attributes](https://www.npmjs.com/package/markdown-it-link-attributes) instead_
 
 > Link target plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
